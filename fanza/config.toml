@@ -21,11 +21,11 @@ serial = ''
 ## 如果是相对路径，则是相对于配置文件的路径
 path = 'downloads'
 ## 创建子文件夹
-subfolder = true
+subfolder = false
 ## 下载封面图片（大）
-cover = true
+cover = false
 ## 下载封面图片（小）
-miniature = true
+miniature = false
 ## NONE: 不要下载字幕
 ## FIFO: 下载符合所选条件的第一个字幕文件
 ## ALL:  下载全部可以找到的字幕文件
@@ -67,7 +67,7 @@ exit = true
 ## beep <true,false>; 在提示选择视频时发出声音（响铃字符）
 beep = false
 ## 如果存储空间少于。。 时不要继续下载 (GB)
-exit_if_space_less = 20
+exit_if_space_less = 10
 ## 预取所有查询结果
 ## NONE: 不要订购结果
 ## ASC:  先用较少的结果来排序
@@ -100,7 +100,7 @@ m3u_strict = true
 
 [output]
 ## cid 或 pid 或 num（DVD-ID，推断）
-filename = 'cid'
+filename = 'pid'
 ## 无损视频格式：mp4 或 mkv 或 raw (= ts = mpegts)
 video_format = 'mp4'
 ## 下载引擎：concurrent 或 consecutive
@@ -115,9 +115,9 @@ preserve_raw_file = false
 ## 将moov atom移动到文件顶部，仅 mp4 (ffmpeg: -movflags +faststart)
 web_optimized = false
 ## 测试版功能：给视频文件添加封面（仅 mp4 和 mkv 格式）
-cover_art = true
+cover_art = false
 ## 测试版功能：移除大咪咪电影封面中的两侧白边框 (147x200)
-crop_cover_art = true
+crop_cover_art = false
 ## 写日志文件
 chunk_log = false
 ## 将FFmpeg命令的输出记录到文件中
@@ -142,7 +142,7 @@ job = 16
 ## 这个值是跟同时下载数量 {job} 相关的
 ## 每个分片通常是3MB，要是这个值是32的话，缓冲区会高达 3MB * 32 = 96MB
 ## -> 默认值：0 是 2 * {job} + {job} / 2
-buffer = 0
+buffer = 72
 ## timeout <1-99>; 单次请求超时时间的秒数
 timeout = 15
 ## retry <0-99>; 最大尝试次数
@@ -153,7 +153,7 @@ retry_on_404 = 15
 ## 等待的秒数第一次失败之后根据公式：
 ## 等待的秒数 = {backoff} * (2 ** ({次数} - 1))
 ## -> 默认值： 0.1 是 [0.1秒, 0.2秒, 0.4秒 。。]
-backoff = 0.1
+backoff = 0.0
 ## 使用伪随机用户代理
 random_ua = true
 
