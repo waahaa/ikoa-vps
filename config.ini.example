@@ -3,9 +3,9 @@
 #使用的网盘，gd or od
 usedrive = gd
 #下载文件夹路径，以/开头
-destination_path = /ikoadownloads
+destination_path = /ikuuu
 #日志路径，以/开头
-log_path = /ikoalogs
+log_path = /log
 #用户名
 adminuser = admin
 #密码
@@ -17,15 +17,15 @@ serial_code = good
 #是否仅下载月额
 monthly_only = true
 #输出文件名字规则，cid or num
-output_filename = cid
+output_filename = pid
 #socket通讯密钥，首次自动生成，删除下次启动即可再次生成
 secret_key = 
 #程序运行的端口
 runport = 5000
 #一次执行的个数(比如一次添加10个，down_time = 5 代表下载五个再上传五个，以此类推)
-down_time = 1
+down_time = 4
 #假如使用gd，那么配置是个人账户还是service accounts(personal or sa),使用个人账户请配置rclone_4.conf
-accounts = personal
+accounts = sa
 
 [rclone_conf_gd]
 #gd的folder id
