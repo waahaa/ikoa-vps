@@ -17,7 +17,7 @@
   
 1、安装 Python 3.6+  版本
 
-2、`git clone https://github.com/horryruo/ikoa-vps.git && chmod +x ikoa-vps` 
+2、`git clone https://github.com/waahaa/ikoa-vps.git && chmod +x ikoa-vps` 
 
 3、`cd ikoa-vps`  
 
