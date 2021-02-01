@@ -67,7 +67,7 @@ exit = true
 ## beep <true,false>; 在提示选择视频时发出声音（响铃字符）
 beep = false
 ## 如果存储空间少于。。 时不要继续下载 (GB)
-exit_if_space_less = 10
+exit_if_space_less = 6
 ## 预取所有查询结果
 ## NONE: 不要订购结果
 ## ASC:  先用较少的结果来排序
